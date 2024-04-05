@@ -1,0 +1,21 @@
+{
+  "name": "kolos",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app"
+  },
+  "author": "Karol",
+  "license": "ISC",
+  "dependecies": {
+    "express": "4.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.3",
+    "ejs": "^3.1.9"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona</title>
+</head>
+<body>
+<section id="subject" class="subject">
+    <h1><%= subject %></h1>
+    <nav>
+        <ul>
+            <li><a href="link">Przycisk 1</a></li>
+            <li><a href="link">Przycisk 2</a></li>
+            <li><a href="link">Przycisk 3</a></li>
+            <li><a href="link">Przycisk 4</a></li>
+        </ul>
+    </nav>
+</section>
+
+<section id="uzytkownicy" class="uzytkownicy">
+    <div>
+        Uzytkownicy:
+        <canvas id="users"></canvas>
+    </div>
+</section>
+<script>
+    const chartConfig = '<%- JSON.stringify(users) %>';
+    const config = JSON.parse(chartConfig);
+    console.log(config);
+</script>
+</body>
+</html>
